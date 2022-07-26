@@ -1,5 +1,5 @@
 body{
-    background-color: #1d1d1d;
+    background-color: #f2fdff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,15 +9,23 @@ body{
     min-height: 100vh;
     box-sizing: border-box;
 }
+
+p{
+    color: #101935;
+}
 .navbar{
-    background-color: whitesmoke;
+    /* background-color: #456990; */
+    background-color: #dde7e9;
+    box-shadow: 0px 0px 0.5px 0.5px black;
+    padding: 5px;
+    
     display: flex;
     height: 50px;
     width: 100%;
 }
 
 .nav-menu{
-    background-color: grey;
+    padding: 5px;
     flex-grow: 1;
 }
 
@@ -35,17 +43,24 @@ body{
     
 } */
 
+.container{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2fdff;
+    width: 40px;
+    height: 40px;
+}
 .baseline{
-    background-color: black;
-    width: 100%;
-    height: 5px;
-    margin-top: 22px;
-    margin-bottom: 22px;
+    background-color: purple;
+    width: 90%;
+    height: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
-p{
-    color: whitesmoke;
-}
 
 .about{
     margin-left: 1.5em;
@@ -67,7 +82,7 @@ p{
 .txt-presentation::first-letter{
     font-weight: 900;
     font-size:2em;
-    text-shadow: -4px 1px 5px purple;
+    text-shadow: -4px 1px 5px #690375;
 
 }
 
@@ -87,7 +102,7 @@ p{
 } 
 
 .footer{
-    background-color: brown;
+    background-color: #456990;
     text-align: center;
     margin-top: auto;
     width: 100%;
