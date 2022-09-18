@@ -1,0 +1,14 @@
+$colors : (
+    "background": /* 0F3D3E *//* 393E46 */ /* rgb(2, 2, 2) */ /* #222831 */ black,
+    "secondary-background": /* rgba(15, 45, 45, 1) *//* #222831 */ black,
+    // "about": rgba(15, 61, 62, 1),
+    "primary" : #DF7861,
+    "secondary" : #00ADB5/* #E2DCC8 *//* #5CB8E4 */,
+    "sidebar" : /* #222831 */ /* rgba(1,1,1, .9) */ rgba(26, 31, 38, .8) /* #101010 */,
+);
+
+$fonts : ();
+
+@mixin neon($x: 0, $y: 0, $max-blur: 20px, $color: white) {
+    text-shadow: 0 0 2px $color, 0 0 5px $color, 0 0 10px $color, 0 0 $max-blur $color;
+}

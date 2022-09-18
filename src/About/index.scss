@@ -1,0 +1,49 @@
+@import "../sass/variables";
+.about{
+    background-color: map-get($colors, background );
+    
+    color: map-get($colors, secondary );
+
+    .description{
+        width: 60%;
+        font-size: 110%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1300px){
+    .about{
+        color: map-get($colors, secondary );
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .title{
+            font-size: 220%;
+        }
+
+        .description{
+            text-align: center;
+            width: 80%;
+
+        }
+    }
+
+   
+}
+
+@media (max-width: 630px){
+    .about{
+        .title{
+            text-align: center;
+            font-size: 1.9rem;
+        }
+    }
+
+}
+
+
+

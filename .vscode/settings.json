@@ -1,0 +1,16 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.jsxSingleQuote": true,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true,
+    "prettier.bracketSpacing": true,
+    "prettier.proseWrap": "always",
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+},
+"[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+}
+}

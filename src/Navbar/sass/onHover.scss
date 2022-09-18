@@ -1,0 +1,196 @@
+.navbar:hover{
+    width: 8%;
+
+
+    ul{
+
+        .item{
+            margin: 25px auto 15px 0;
+            overflow: hidden;
+            font-size: 0px;            
+
+            div{
+                position: absolute;
+                right: 2px;
+                bottom: 2px;
+                border-radius: 50%;
+                height: 5px;
+                width: 5px;
+                background-color: #373A40;
+                border: .2px solid black;
+                box-shadow: inset 0 0 2px black, .5px .5px 3px black;
+            }
+        }
+
+        .item::after{
+            vertical-align: -50%;
+        }
+        .btn-about{
+            animation: nav-hover .4s .1s forwards normal;
+
+        }
+        .btn-about::after{
+            content: "About";
+
+        }
+        
+        .btn-skills{
+            animation: nav-hover .4s .2s forwards normal;
+
+        }
+        .btn-skills::after{
+            content: "Skills";
+
+        }
+
+        .btn-proyects{
+            animation: nav-hover .4s .4s forwards normal;
+
+        }
+        .btn-proyects::after{
+            content: "Proyects";
+
+        }
+
+        .btn-contact{
+            animation: nav-hover .4s .6s forwards normal;
+
+        }
+        .btn-contact::after{
+            content: "Contact";
+
+        }
+
+       
+   }
+}
+
+
+
+
+@keyframes nav-hover {
+    25%{
+        border-top-right-radius: 30%;
+        color: black;
+        font-size: 100%;
+        font-weight: 600;
+        
+
+        
+    }
+    40%{
+        border-top-right-radius: 25%;
+        color: black;
+        font-size: 100%;
+        font-weight: 600;
+
+
+    }
+    50%{
+        border-top-right-radius: 20%;
+        color: black;
+        font-size: 100%;
+        font-weight: 600;
+        
+
+        width: 100px;
+    }
+    75%{
+        border-top-right-radius: 15%;
+        color: black;
+        font-size: 100%;
+        font-weight: 600;
+        
+
+        // height: 28px;
+    }
+    90%{
+        border-top-right-radius: 10%;
+        color: black;
+        font-size: 100%;
+        font-weight: 600;
+        
+
+        // height: 30px;
+    }
+   
+    100%{
+        border-top-right-radius: 10%;
+        color: black;
+        font-size: 100%;
+        font-weight: 600;
+        
+
+        height: 40px;
+        width: 100px;
+
+    }
+ }
+
+ .hover-out-animation{
+    animation: hover-out .4s forwards normal;
+}
+ @keyframes hover-out{
+    0%{
+        width: 100px;
+    }
+    25%{
+        border-top-right-radius: 30%;
+        color: black;
+        font-size: 100%;
+        font-weight: 600;
+        
+
+        width: 80px;
+    }
+    40%{
+        border-top-right-radius: 25%;
+        color: black;
+        font-size: 100%;
+        font-weight: 600;
+        
+
+        width: 70px;
+
+    }
+    50%{
+        border-top-right-radius: 20%;
+        color: black;
+        font-size: 100%;
+        font-weight: 600;
+        
+
+        width: 60px;
+    }
+    75%{
+        border-top-right-radius: 15%;
+        color: black;
+        font-size: 100%;
+        font-weight: 600;
+        
+
+        // height: 28px;
+        width: 50px;
+    }
+    90%{
+        border-top-right-radius: 10%;
+        color: black;
+        font-size: 100%;
+        font-weight: 600;
+        
+
+        // height: 30px;
+    }
+   
+    100%{
+        border-top-right-radius: 0%;
+
+        color: black;
+        font-size: 100%;
+        font-weight: 600;
+        
+    height: 40px;
+        width: 40px;
+
+    }
+}

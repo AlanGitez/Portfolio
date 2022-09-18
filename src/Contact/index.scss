@@ -1,0 +1,77 @@
+@import "../sass/variables";
+
+
+.form{
+    background-color: map-get($colors, background);
+    border: 1px solid red;
+    form{
+        min-height: 500px;
+        width: 50%;
+        padding: 10px;
+        border: 1px solid yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        
+        input{
+            height: 30px;
+            color: white;
+            border: none;
+            outline: none;
+            background-color: grey;
+        }
+
+        input::placeholder{
+            color: white;
+            padding-bottom: 50px
+        }
+
+        .first-line{
+            margin-right: auto;
+            width: 100%;
+            border: 1px solid blue;
+            display: flex;
+            justify-content: space-between;
+            *{
+                width: 48%;
+            }
+        }
+
+        .subject{
+            margin-right: auto;
+            width: 100%;
+            *{
+                width: 100%;
+            }
+        }
+
+
+        .message{
+            width: 100%;
+            margin: 8px auto 8px 0;
+
+            input{
+                width: 100%;
+                min-height: 200px;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 450px){
+
+    .container{
+        form{
+            .first-line{
+                *{
+                    width: 100%;
+                    margin: 2px;
+                    margin: auto;
+                }
+            }
+        }
+    }        
+}

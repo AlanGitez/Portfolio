@@ -1,0 +1,29 @@
+.burger-menu{
+    display: none;
+    .line{
+        width: 80%;
+        height: 4px;
+        margin: 2px auto ;
+        background-color: black;
+    }
+}
+
+
+@media (max-width: 1300px){
+    .menu{
+        display: none;
+    }
+    .burger-menu{
+        width: 45px;
+        height: 45px;
+        margin-left: auto;
+        padding: 2px;
+        border-radius: 3px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+}

@@ -1,0 +1,68 @@
+@import "../sass/variables";
+
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ 
+        .title{
+            // border:1px solid green;
+            margin: auto 0;
+            font-size: 2.7rem;
+            text-transform: uppercase;
+            text-align: center;
+            text-shadow: 0px 0px 3px black;
+            position: relative;
+
+            .left-in{
+                animation: left-in 3s backwards;
+            }
+
+            .right-in{
+                animation: right-in 3s backwards;
+            }
+
+            p{
+                color: rgba(16, 15, 15, 1);
+                margin-top: 6px;
+                font-size: 1.7rem;
+                letter-spacing: 3px;
+                font-style: italic;
+
+            }
+        }
+
+       
+}
+
+@keyframes left-in{
+    from{
+        margin-left: -100%;
+    }
+}
+
+@keyframes right-in{
+    from{
+        margin-right: -100%;
+    }
+}
+
+
+@media (max-width: 1300px){
+
+    .title{
+        font-size: 220%;
+    }
+
+}
+
+@media (max-width: 630px){
+    .title{
+        text-align: center;
+        font-size: 1.9rem;
+
+    }
+
+}

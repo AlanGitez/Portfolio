@@ -1,0 +1,151 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Josefin+Sans:ital@1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+
+button{
+    border: none;
+}
+
+.container{
+    height: 100vh;
+    width: 97%;
+    color: map-get($colors, secondary );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1300px){
+
+  .container{
+    width: 100%;
+  }
+
+}
+
+.shadow-bg{
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.4), 0 0 75px rgba(255, 255, 255, 0.5);
+}
+
+$prueba: /* #AB2346 */ /* #CA4C25 */ #FEC601;
+.neon{
+  color: black;
+  @include neon(0, 0, 25px,$prueba);
+  font-weight: 600;
+  animation: blink 2s backwards steps(2);
+  
+
+  .front{
+    animation: blink 2s backwards steps(1);
+
+  }
+
+  .back{
+    animation: blink 1s 1 backwards steps(2);
+
+  }
+
+}
+
+@keyframes blink{
+  0% {
+    opacity:0.1;
+  font-weight: 500;
+
+    @include neon(0, 0, 25px,$prueba)  
+  }
+  
+  2% {
+    opacity:1;
+ 
+  font-weight: 500;
+    @include neon(0, 0, 25px,$prueba)  
+  }
+  8% {
+    opacity:0.1;
+  font-weight: 500;
+
+    @include neon(0, 0, 25px,$prueba)  
+  }
+  9% {
+    opacity:1;
+ 
+  font-weight: 500;
+    @include neon(0, 0, 25px,$prueba)  
+  }
+  12% {
+    opacity:0.1;
+  font-weight: 500;
+
+    @include neon(0, 0, 25px,$prueba)
+  }
+  20% {
+    opacity:1;
+ 
+  font-weight: 500;
+    @include neon(0, 0, 25px,$prueba)
+  }
+  25% {
+    opacity:0.3;
+  font-weight: 500;
+
+    @include neon(0, 0, 25px,$prueba)
+  }
+  30% {
+    opacity:1;
+ 
+  font-weight: 500;
+    @include neon(0, 0, 25px,$prueba)
+  }
+  
+  70% {
+    opacity:0.7;
+  font-weight: 500;
+
+    @include neon(0, 0, 25px,$prueba)
+  }
+  
+  72% {
+    opacity:0.2;
+  font-weight: 500;
+
+    @include neon(0, 0, 25px,$prueba)
+  }
+  
+  77% {
+    opacity:.9;
+
+  font-weight: 500;
+    @include neon(0, 0, 25px,$prueba)
+  }
+  100% {
+    opacity:.9;
+
+  font-weight: 500;
+    @include neon(0, 0, 25px,$prueba)
+  }
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    background-color: map-get($colors, background);
+    min-height: 100vh; 
+}
