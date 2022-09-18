@@ -14,8 +14,8 @@ export default function Navbar() {
         className="navbar"
         {...hoverController}>
         <div className="networks-container">
-          {/* <TiSocialGithubCircular />
-          <TiSocialLinkedinCircular /> */}
+          <TiSocialGithubCircular className='btn' />
+          <TiSocialLinkedinCircular className='btn' />
         </div>
         <BurgerMenu />
         <Menu isMouseLeave={hoverController.isMouseLeave} />

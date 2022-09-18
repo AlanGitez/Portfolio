@@ -15,10 +15,10 @@ export default function Menu({ isMouseLeave }) {
             <div className="menu">
                 <nav>
                     <ul className='nav-list' ref={list}>
-                        <li className='item btn-about'><div></div></li>
-                        <li className='item btn-skills'><div></div></li>
-                        <li className='item btn-proyects'><div></div></li>
-                        <li className='item btn-contact'><div></div></li>
+                        <li className='item btn btn-about'><div></div></li>
+                        <li className='item btn btn-skills'><div></div></li>
+                        <li className='item btn btn-proyects'><div></div></li>
+                        <li className='item btn btn-contact'><div></div></li>
                     </ul>
                 </nav>
             </div>

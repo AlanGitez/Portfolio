@@ -30,18 +30,15 @@ button{
 
 }
 
-.shadow-bg{
-  height: 120px;
-  width: 120px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  opacity: 0;
-  border-radius: 50%;
-  box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.4), 0 0 75px rgba(255, 255, 255, 0.5);
+.btn{
+  transition: transform .2s ease;
+}
+.btn:hover{
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+.btn:active{
+  transform: translateY(1px);
 }
 
 $prueba: /* #AB2346 */ /* #CA4C25 */ #FEC601;
