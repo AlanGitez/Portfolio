@@ -1,17 +1,23 @@
-import About from "./About";
-import Contact from "./Contact";
-import Home from "./Home";
+import React, { Suspense } from "react";
 import Navbar from "./Navbar";
-import Proyects from "./Proyects";
+import Home from "./Home";
 import "./sass/index.scss"
+
+const About = React.lazy(() => import("./About"));
+const Proyects = React.lazy(() => import("./Proyects"));
+const Contact = React.lazy(() => import("./Contact"));
+
 function App() {
+
   return (
     <>
       <Navbar />
       <Home />
-      <About />
-      <Proyects />
-      <Contact />
+      <Suspense>
+        <About />
+        <Proyects />
+        <Contact />
+      </Suspense>
     </>
   );
 }

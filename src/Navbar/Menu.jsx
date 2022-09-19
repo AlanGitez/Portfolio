@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react'
 
-export default function Menu({ isMouseLeave }) {
+export default function Menu({ isMouseLeave, aboutRef }) {
     const list = useRef();
+
+
 
     useEffect(() => {
         list.current &&
@@ -15,10 +17,10 @@ export default function Menu({ isMouseLeave }) {
             <div className="menu">
                 <nav>
                     <ul className='nav-list' ref={list}>
-                        <li className='item btn btn-about'><div></div></li>
-                        <li className='item btn btn-skills'><div></div></li>
-                        <li className='item btn btn-proyects'><div></div></li>
-                        <li className='item btn btn-contact'><div></div></li>
+                        <a href="#about" className='item btn btn-about'><li><div></div></li></a>
+                        <a href="#skills" className='item btn btn-skills'><li><div></div></li></a>
+                        <a href="#proyects" className='item btn btn-proyects'><li><div></div></li></a>
+                        <a href="#contact" className='item btn btn-contact'><li ><div></div></li></a>
                     </ul>
                 </nav>
             </div>

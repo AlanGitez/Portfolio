@@ -3,7 +3,7 @@ import React from 'react'
 export default function Home() {
     return (
         <>
-            <div className="home container" >
+            <div className="container" id='home'>
                 {/* <div className='middle' style={{ height: "80%", width: "90%", border: "1px solid blue", backgroundColor: "black" }}> */}
                 <div className="title">
                     <h1 className='left-in text-shadow'>¡Hola! </h1>

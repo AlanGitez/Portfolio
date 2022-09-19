@@ -1,6 +1,6 @@
 @import "../sass/variables";
 
-.proyects{
+#proyects{
     padding: 40px;
 
     background-color: map-get($colors , secondary-background );
@@ -51,7 +51,7 @@
 }
 
 @media (max-width: 400px){
-    .proyects{
+    #proyects{
         display: flex;
         flex-direction: column;
         justify-content: center;
