@@ -1,5 +1,6 @@
 @import "../../sass/variables";
 .navbar {
+    z-index: 500;
     width: 3%;
     height: 100vh;
     position: fixed;
@@ -18,7 +19,7 @@
         opacity: 0;
         width: 100%;
         height: 10%;
-        color: white;
+        color: white !important;
         transition: opacity .7s ease;
         *{
             width: 40%;

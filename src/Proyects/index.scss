@@ -1,7 +1,6 @@
 @import "../sass/variables";
 
 #proyects{
-    padding: 30px;
     // border: 1px solid green;
     background-color: map-get($colors , secondary-background );
     display: flex;
@@ -19,7 +18,6 @@
     }
 
     div.list{
-        // border: 1px solid red;
         height: 700px;
         width: 1300px;
         display: flex;

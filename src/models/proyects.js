@@ -1,11 +1,11 @@
 export const proyects = [
     {
-        image: "images/virtual-events.png"
+        image: "images/proyects/virtual-events.png"
     },
     {
-        image: "images/e-commerce.png"
+        image: "images/proyects/e-commerce.png"
     },
     {
-        image: "images/films-plus.png"
+        image: "images/proyects/films-plus.png"
     }
 ];
