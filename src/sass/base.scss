@@ -45,9 +45,11 @@ button{
 }
 
 $prueba: /* #AB2346 */ /* #CA4C25 */ #FEC601;
+// $prueba: /* #AB2346 */ /* #CA4C25 */ #a945c7;
+
 .neon{
   color: black;
-  @include neon(0, 0, 25px,$prueba);
+  @include neon(0, 0, 25px, $prueba);
   font-weight: 600;
   animation: blink 2s backwards steps(2);
   
