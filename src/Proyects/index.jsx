@@ -23,14 +23,14 @@ export default function Proyects() {
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consequuntur sequi quod eius error mollitia sunt tempore corporis ipsum repudiandae voluptatum ad distinctio veniam quaerat porro, illum nam quas ullam.</p>
 
                                     <div className="links">
-                                        <a href="#" className='btn-neon'>
+                                        <a href={item.github} className='btn-neon' target={"_blank"}>
                                             <span className="span1"></span>
                                             <span className="span2"></span>
                                             <span className="span3"></span>
                                             <span className="span4"></span>
                                             Github
                                         </a>
-                                        <a href="#" className='btn-neon'>
+                                        <a href={item.deploy} className='btn-neon' target={"_blank"}>
                                             <span className="span1"></span>
                                             <span className="span2"></span>
                                             <span className="span3"></span>

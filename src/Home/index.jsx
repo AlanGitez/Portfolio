@@ -5,12 +5,19 @@ export default function Home() {
         <>
             <div className="container" id='home'>
                 {/* <div className='middle' style={{ height: "80%", width: "90%", border: "1px solid blue", backgroundColor: "black" }}> */}
-                <div className="title">
+                {/* <div className="title">
+                    <h1 className='left-in text-shadow'>Hi! </h1>
+                    <h1 className='right-in text-shadow'>Im <span className="neon" style={{ fontWeight: "400" }}>Alan Benitez</span></h1>
+                    <h4 className='left-in text-shadow'>Full-Stack developer</h4>
+                    <p className='neon'><span className='front'>Frontend</span> / <span className='back'>Backend</span></p>
+                </div> */}
+
+                {<div className="title">
                     <h1 className='left-in text-shadow'>¡Hola! </h1>
                     <h1 className='right-in text-shadow'>Soy <span className="neon" style={{ fontWeight: "400" }}>Alan Benitez</span></h1>
                     <h4 className='left-in text-shadow'>Full-Stack developer</h4>
                     <p className='neon'><span className='front'>Frontend</span> / <span className='back'>Backend</span></p>
-                </div>
+                </div>}
                 {/* </div> */}
 
 
