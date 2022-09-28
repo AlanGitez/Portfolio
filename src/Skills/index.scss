@@ -1,73 +1,89 @@
+@import "./media.scss";
 
 #skills{
-    perspective: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    
     .title{
         font-size: xx-large;
         margin-bottom: auto;
         color: black;
     }
-    .rotated{
-        margin-top: 100px;
-        position: relative;
-        height: 800px;
-        width: 800px;
-        transform: rotateX(-5deg);
-        transform-style: preserve-3d;
+}
+@media (min-width: 850px){
+    #skills{
 
-        .skills-container{
+        perspective: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        .title{
+            font-size: xx-large;
+            margin-bottom: auto;
+            color: black;
+        }
+        .rotated{
             margin-top: 100px;
-            height: 60%;
-            width: 100%;
-            display: flex;
-            position: absolute;
+            position: relative;
+            height: 800px;
+            width: 800px;
+            transform: rotateX(-5deg);
             transform-style: preserve-3d;
-            animation:rotate 20s infinite linear;
-            border-radius: 50%;
-            .skill{
-                padding: 40px;
-                height: 200px;
-                width: 200px;
-                overflow: hidden;
-                background-color: transparent;
+    
+            .skills-container{
+                margin-top: 100px;
+                height: 60%;
+                width: 100%;
+                display: flex;
                 position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                margin: auto;
-                
-                img{
-                    height: 100%;
-                    width: 100%;
-                    transition: all .5s ease;
-                }
-
-                p{
-                    text-align: center;
-                    font-size: large;
-                    font-weight: 600;
+                transform-style: preserve-3d;
+                animation:rotate 20s infinite linear;
+                border-radius: 50%;
+                .skill{
+                    padding: 40px;
+                    height: 200px;
+                    width: 200px;
+                    overflow: hidden;
+                    background-color: transparent;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    margin: auto;
+                    
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        transition: all .5s ease;
+                    }
+    
+                    p{
+                        text-align: center;
+                        font-size: large;
+                        font-weight: 600;
+                    }
                 }
             }
-        }
-
-
-        .skill:hover{
-
-           img{
-                transform: scale(1.2);
-                transform: translateY(-20px);
-           }
-
-            p{
-                text-shadow: 0px 2px 20px whitesmoke;
+    
+    
+            .skill:hover{
+    
+               img{
+                    transform: scale(1.2);
+                    transform: translateY(-20px);
+               }
+    
+                p{
+                    text-shadow: 0px 2px 20px whitesmoke;
+                }
             }
         }
     }
 }
+
 
 
 
