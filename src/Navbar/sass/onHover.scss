@@ -1,235 +1,240 @@
-.navbar:hover{
-    background-color: rgba(26, 31, 38, 1);
-    width: 8%;
-    box-shadow: inset -2px 0 15px rgba(255,255,255, .1), -2px 0 15px rgba(255,255,255, .1);
-
-    .networks-container{
-        opacity: 1;
-    }
-
-    ul{
-
-        .item{
+@media (min-width: 1300px){
+    .navbar:hover{
+        background-color: rgba(26, 31, 38, 1);
+        width: 8%;
+        box-shadow: inset -2px 0 15px rgba(255,255,255, .1), -2px 0 15px rgba(255,255,255, .1);
+    
+        .networks-container{
             opacity: 1;
-            margin: 25px auto 15px 0;
-            font-size: 0px;   
-            text-transform: uppercase;    
-
-            div{
-                position: absolute;
-                right: 2px;
-                bottom: 2px;
-                border-radius: 50%;
-                height: 5px;
-                width: 5px;
-                background-color: #373A40;
-                border: .2px solid black;
-                box-shadow: inset 0 0 2px black, .3px .3px 2px white;
+        }
+    
+        ul{
+    
+            .item{
+                opacity: 1;
+                margin: 25px auto 15px 0;
+                font-size: 0px;   
+                text-transform: uppercase;    
+    
+                div{
+                    position: absolute;
+                    right: 2px;
+                    bottom: 2px;
+                    border-radius: 50%;
+                    height: 5px;
+                    width: 5px;
+                    background-color: #373A40;
+                    border: .2px solid black;
+                    box-shadow: inset 0 0 2px black, .3px .3px 2px white;
+                }
             }
+    
+            .item::after{
+                vertical-align: -50%;
+            }
+            .btn-about{
+                animation: nav-hover .4s .1s forwards normal;
+    
+            }
+            .btn-about::after{
+                content: "About";
+    
+            }
+            
+            .btn-skills{
+                animation: nav-hover .4s .2s forwards normal;
+    
+            }
+            .btn-skills::after{
+                content: "Skills";
+    
+            }
+    
+            .btn-proyects{
+                animation: nav-hover .4s .4s forwards normal;
+    
+            }
+            .btn-proyects::after{
+                content: "Proyectos";
+    
+            }
+    
+            .btn-contact{
+                animation: nav-hover .4s .6s forwards normal;
+    
+            }
+            .btn-contact::after{
+                content: "Contacto";
+    
+            }
+    
+           
+       }
+    }
+    
+    
+    
+    
+    @keyframes nav-hover {
+        25%{
+            font-size: 100%;
+            font-weight: 600;
+            background-image: linear-gradient(
+      135deg,
+      hsl(189deg 6% 57%) 0%,
+      hsl(199deg 7% 47%) 13%,
+      hsl(207deg 13% 36%) 25%,
+      hsl(209deg 18% 31%) 37%,
+      hsl(202deg 8% 44%) 50%,
+      hsl(193deg 6% 54%) 63%,
+      hsl(196deg 6% 51%) 75%,
+      hsl(205deg 10% 40%) 87%,
+      hsl(210deg 29% 24%) 100%
+    );
+    
+            
         }
-
-        .item::after{
-            vertical-align: -50%;
+        40%{
+            font-size: 100%;
+            font-weight: 600;
+    
+    
         }
-        .btn-about{
-            animation: nav-hover .4s .1s forwards normal;
-
+        50%{
+    
+            font-size: 100%;
+            font-weight: 600;
+            
+    
+            width: 100px;
+            background-image: linear-gradient(
+                    135deg,
+                    hsl(189deg 6% 57%) 0%,
+                    hsl(199deg 7% 47%) 2%,
+                    hsl(207deg 13% 36%) 7%,
+                    hsl(209deg 18% 31%) 22%,
+                    hsl(202deg 8% 44%) 55%,
+                    hsl(193deg 6% 54%) 75%,
+                    hsl(196deg 6% 51%) 86%,
+                    hsl(205deg 10% 40%) 94%,
+                    hsl(210deg 29% 24%) 100%
+                    );
+            
         }
-        .btn-about::after{
-            content: "About";
-
+        75%{
+            font-size: 100%;
+            font-weight: 600;
+            
+    
+            // height: 28px;
         }
-        
-        .btn-skills{
-            animation: nav-hover .4s .2s forwards normal;
-
+        80%{
+            border-top-right-radius: 5%;
+    
         }
-        .btn-skills::after{
-            content: "Skills";
-
+        90%{
+            border-top-right-radius: 10%;
+            font-size: 100%;
+            font-weight: 600;
         }
-
-        .btn-proyects{
-            animation: nav-hover .4s .4s forwards normal;
-
-        }
-        .btn-proyects::after{
-            content: "Proyectos";
-
-        }
-
-        .btn-contact{
-            animation: nav-hover .4s .6s forwards normal;
-
-        }
-        .btn-contact::after{
-            content: "Contacto";
-
-        }
-
        
-   }
-}
-
-
-
-
-@keyframes nav-hover {
-    25%{
-        font-size: 100%;
-        font-weight: 600;
-        background-image: linear-gradient(
-  135deg,
-  hsl(189deg 6% 57%) 0%,
-  hsl(199deg 7% 47%) 13%,
-  hsl(207deg 13% 36%) 25%,
-  hsl(209deg 18% 31%) 37%,
-  hsl(202deg 8% 44%) 50%,
-  hsl(193deg 6% 54%) 63%,
-  hsl(196deg 6% 51%) 75%,
-  hsl(205deg 10% 40%) 87%,
-  hsl(210deg 29% 24%) 100%
-);
-
-        
-    }
-    40%{
-        font-size: 100%;
-        font-weight: 600;
-
-
-    }
-    50%{
-
-        font-size: 100%;
-        font-weight: 600;
-        
-
-        width: 100px;
-        background-image: linear-gradient(
+        100%{
+            border-top-right-radius: 25%;
+            font-size: 100%;
+            font-weight: 600;
+            // background-image: linear-gradient(to bottom right, #8a9597 50%, rgba(44, 62, 80, 0.8));   
+            background-image: linear-gradient(
                 135deg,
                 hsl(189deg 6% 57%) 0%,
-                hsl(199deg 7% 47%) 2%,
-                hsl(207deg 13% 36%) 7%,
-                hsl(209deg 18% 31%) 22%,
-                hsl(202deg 8% 44%) 55%,
-                hsl(193deg 6% 54%) 75%,
-                hsl(196deg 6% 51%) 86%,
-                hsl(205deg 10% 40%) 94%,
+                hsl(199deg 7% 47%) 15%,
+                hsl(207deg 13% 36%) 32%,
+                hsl(209deg 18% 31%) 49%,
+                hsl(202deg 8% 44%) 65%,
+                hsl(193deg 6% 54%) 77%,
+                hsl(196deg 6% 51%) 87%,
+                hsl(205deg 10% 40%) 95%,
                 hsl(210deg 29% 24%) 100%
-                );
-        
+              );
+    //         background-image: linear-gradient(
+    //   135deg,
+    //   hsl(189deg 6% 57%) 1%,
+    //   hsl(199deg 7% 47%) 44%,
+    //   hsl(207deg 13% 36%) 50%,
+    //   hsl(209deg 18% 31%) 51%,
+    //   hsl(202deg 8% 44%) 50%,
+    //   hsl(193deg 6% 54%) 49%,
+    //   hsl(196deg 6% 51%) 50%,
+    //   hsl(205deg 10% 40%) 56%,
+    //   hsl(210deg 29% 24%) 99%
+    // );
+            height: 40px;
+            width: 100px;
+    
+        }
+     }
+    
+     .hover-out-animation{
+        animation: hover-out .4s forwards normal;
     }
-    75%{
-        font-size: 100%;
-        font-weight: 600;
-        
-
-        // height: 28px;
-    }
-    80%{
-        border-top-right-radius: 5%;
-
-    }
-    90%{
-        border-top-right-radius: 10%;
-        font-size: 100%;
-        font-weight: 600;
-    }
-   
-    100%{
-        border-top-right-radius: 25%;
-        font-size: 100%;
-        font-weight: 600;
-        // background-image: linear-gradient(to bottom right, #8a9597 50%, rgba(44, 62, 80, 0.8));   
-        background-image: linear-gradient(
-            135deg,
-            hsl(189deg 6% 57%) 0%,
-            hsl(199deg 7% 47%) 15%,
-            hsl(207deg 13% 36%) 32%,
-            hsl(209deg 18% 31%) 49%,
-            hsl(202deg 8% 44%) 65%,
-            hsl(193deg 6% 54%) 77%,
-            hsl(196deg 6% 51%) 87%,
-            hsl(205deg 10% 40%) 95%,
-            hsl(210deg 29% 24%) 100%
-          );
-//         background-image: linear-gradient(
-//   135deg,
-//   hsl(189deg 6% 57%) 1%,
-//   hsl(199deg 7% 47%) 44%,
-//   hsl(207deg 13% 36%) 50%,
-//   hsl(209deg 18% 31%) 51%,
-//   hsl(202deg 8% 44%) 50%,
-//   hsl(193deg 6% 54%) 49%,
-//   hsl(196deg 6% 51%) 50%,
-//   hsl(205deg 10% 40%) 56%,
-//   hsl(210deg 29% 24%) 99%
-// );
+     @keyframes hover-out{
+        0%{
+            width: 100px;
+        }
+        25%{
+            border-top-right-radius: 30%;
+            font-size: 100%;
+            font-weight: 600;
+            
+    
+            width: 80px;
+        }
+        40%{
+            border-top-right-radius: 25%;
+            font-size: 100%;
+            font-weight: 600;
+            
+    
+            width: 70px;
+    
+        }
+        50%{
+            border-top-right-radius: 20%;
+            font-size: 100%;
+            font-weight: 600;
+            
+    
+            width: 60px;
+        }
+        75%{
+            border-top-right-radius: 15%;
+            font-size: 100%;
+            font-weight: 600;
+            
+    
+            // height: 28px;
+            width: 50px;
+        }
+        90%{
+            border-top-right-radius: 10%;
+            font-size: 100%;
+            font-weight: 600;
+            
+    
+            // height: 30px;
+        }
+       
+        100%{
+            border-top-right-radius: 0%;
+    
+            font-size: 100%;
+            font-weight: 600;
+            
         height: 40px;
-        width: 100px;
-
+            width: 40px;
+    
+        }
     }
- }
 
- .hover-out-animation{
-    animation: hover-out .4s forwards normal;
+
 }
- @keyframes hover-out{
-    0%{
-        width: 100px;
-    }
-    25%{
-        border-top-right-radius: 30%;
-        font-size: 100%;
-        font-weight: 600;
-        
 
-        width: 80px;
-    }
-    40%{
-        border-top-right-radius: 25%;
-        font-size: 100%;
-        font-weight: 600;
-        
-
-        width: 70px;
-
-    }
-    50%{
-        border-top-right-radius: 20%;
-        font-size: 100%;
-        font-weight: 600;
-        
-
-        width: 60px;
-    }
-    75%{
-        border-top-right-radius: 15%;
-        font-size: 100%;
-        font-weight: 600;
-        
-
-        // height: 28px;
-        width: 50px;
-    }
-    90%{
-        border-top-right-radius: 10%;
-        font-size: 100%;
-        font-weight: 600;
-        
-
-        // height: 30px;
-    }
-   
-    100%{
-        border-top-right-radius: 0%;
-
-        font-size: 100%;
-        font-weight: 600;
-        
-    height: 40px;
-        width: 40px;
-
-    }
-}

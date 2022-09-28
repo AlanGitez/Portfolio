@@ -1,0 +1,39 @@
+@media (max-width: 1000px){
+    #contact{
+        *{
+            outline: 1px solid red;
+        }
+        padding: 15px 10px !important;
+        justify-content: space-between !important;
+        .links{
+            margin-left: 0 !important;
+            a{
+                margin-left: 0;
+            }
+        }
+
+        .social-networks{
+            margin-right: 0 !important;
+        }
+    }
+
+}
+
+@media (max-width: 790px){
+    #contact{
+        *{
+            outline: 1px solid red;
+        }
+        .links{
+            margin-left: 0 !important;
+            a{
+                margin-left: 0;
+                font-size: 1.2rem !important;
+            }
+        }
+
+        .social-networks{
+            margin-right: 0 !important;
+        }
+    }
+}

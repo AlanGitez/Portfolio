@@ -1,10 +1,11 @@
 @import "../sass/variables";
+@import "./media.scss";
 
 
 #contact{
     margin-top: auto;
     padding: 15px 50px;
-    height: 30vh;
+    height: 30%;
     background: whitesmoke;
     color: black;
     font-weight: 500;
@@ -43,14 +44,18 @@
             margin-top: 20px;
             width: 50%;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
 
+           a{
+            margin: auto;
+
             img{
-                height: 100px;
-                width: 100px;
+                height: 70px;
+                width: 70px;
 
             }
+           }
 
         }
     }
