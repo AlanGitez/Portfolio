@@ -1,0 +1,33 @@
+@media(max-width: 1100px){
+    #home{
+
+        .options{
+            width: 75% !important;
+        }
+    }
+}
+
+@media(max-width: 800px){
+    #home{
+
+        .options{
+            width: 100% !important;
+        }
+    }
+}
+
+@media(max-width: 550px){
+    #home{
+
+        .options{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between !important;
+            width: 100% !important;
+
+            a{
+                margin: 10px;
+            }
+        }
+    }
+}

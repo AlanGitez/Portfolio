@@ -17,7 +17,7 @@ export default function Navbar() {
           <a href="https://github.com/AlanGitez" target={"_blank"}><TiSocialGithubCircular className='btn' style={{ color: "white" }} /></a>
           <a href="https://www.linkedin.com/in/benitez-alan/" target={"_blank"}><TiSocialLinkedinCircular className='btn' style={{ color: "white" }} /></a>
         </div>
-        <BurgerMenu />
+        {/* <BurgerMenu /> */}
         <Menu isMouseLeave={hoverController.isMouseLeave} />
       </header>
     </>

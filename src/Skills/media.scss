@@ -1,16 +1,41 @@
 @media (max-width: 850px){
     #skills{
-        
+        min-height: 100vh !important;
         .rotated{
-            width: 100% !important;
-            overflow: hidden;
+            height: 75% !important;
+            min-height: 800px;
+            width: 85%;
+
+            .skills-container {
+                height: 100% !important;
+                min-height: 800px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                .skill{
+                    margin: 15px;
+                    height: 100px !important;
+                    width: 100px !important;
+                    transform: inherit !important;
+
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    p{
+                        text-align: center;
+                        font-size: large;
+                        font-weight: 600;
+                    }
+                }
+            
+            }
         }
 
         
-            .skill{
-                height: 150px !important;
-                width: 150px !important;
-            }
         
     }
 }

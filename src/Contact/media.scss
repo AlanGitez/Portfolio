@@ -1,8 +1,5 @@
 @media (max-width: 1000px){
     #contact{
-        *{
-            outline: 1px solid red;
-        }
         padding: 15px 10px !important;
         justify-content: space-between !important;
         .links{
@@ -21,9 +18,6 @@
 
 @media (max-width: 790px){
     #contact{
-        *{
-            outline: 1px solid red;
-        }
         .links{
             margin-left: 0 !important;
             a{
@@ -34,6 +28,35 @@
 
         .social-networks{
             margin-right: 0 !important;
+        }
+    }
+}
+
+
+@media (max-width: 790px){
+
+    #contact{
+        flex-direction: column;
+        align-items: center;
+        height: 40vh;
+        .links{
+            align-items: center !important;
+        }
+
+        .social-networks{
+            h2{
+                font-size: 2.5rem;
+            }
+
+            .icons{
+                a{
+                    img{
+                        height: 50px !important;
+                        width: 50px !important;
+
+                    }
+                }
+            }
         }
     }
 }
