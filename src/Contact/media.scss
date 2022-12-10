@@ -33,12 +33,12 @@
 }
 
 
-@media (max-width: 790px){
+@media (max-width: 500px){
 
     #contact{
         flex-direction: column;
         align-items: center;
-        height: 40vh;
+        height: 45vh;
         .links{
             align-items: center !important;
         }

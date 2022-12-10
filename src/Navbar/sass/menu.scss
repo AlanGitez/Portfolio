@@ -37,28 +37,3 @@
     }
 }
 
-
-
-/* old items configuration */
-/* .item{
-                font-size: 150%;
-                width: 90%;
-                height: 35px;
-                margin: auto;
-                padding-top: 5px;
-                cursor: pointer;
-            }
-            .item::after{
-                display: block;
-                margin: auto;
-                width: 80%;
-                content: '';
-                border-bottom: .1px solid white;
-                transform: scale(0);
-                transform-origin: center;
-                transition: transform .5s ease-in-out;
-            }
-            .item:hover::after{
-                transform: scale(1);
-
-            } */
